@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навчальний відділ закладу вищої освіти</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="jQuery.js"></script>
+
+</head>
+
+<body>
+<div class="header">
+    <div class="menu-icon">
+        &#9776;
+    </div>
+    <div class="navigation">
+        <li><a href="index.html" class="text">Головна</a></li>
+        <li><a href="index1.html" class="text">Про відділ</a></li>
+        <li><a href="index2.html" class="text">Галерея зображень</a></li>
+        <li><a href="index3.html" class="text">Новини</a></li>
+        <li><a href="index4.html" class="text">Контакти</a></li>
+    </div>
+    <img src=logo.jpg alt="Logo" class="logo">
+</div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background: url(back.jpg) center center no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .hh1 {
+        color: #fffefe;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .gallery-item:hover .image-overlay {
+        opacity: 1;
+    }
+
+    .text {
+        font-family: cursive;
+        color: OldLace;
+    }
+
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .image-overlay-content h2 {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .image-overlay-content p {
+        color: #ccc;
+        font-size: 14px;
+    }
+
+</style>
+    <h1>Медіа галерея</h1>
+<div class="container">
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="a1.jpg" alt="Зображення 1">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>У ХНУРЕ ВІДБУЛАСЬ КОНФЕРЕНЦІЯ ТРУДОВОГО КОЛЕКТИВУ</h2>
+                    <p>Важкий рік та випробування війною поклали на керівництво та співробітників університету нові важливі
+                        задачі. Як з ними впоралися та які зміни приніс 2022 рік доповів в.о. ректора Ігор Рубан.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a2.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>СТУДЕНТ КАФЕДРИ ПІ ОТРИМАВ ПОДЯКУ ХАРКІВСЬКОГО МІСЬКОГО ГОЛОВИ</h2>
+                    <p>Вітаємо студента 4 курса групи ПЗПІ-19-3 Логвіна Івана з отриманням подяки від Харківського міського
+                        голови Ігоря Терехова за високі досягнення в навчанні, участь у науковій та громадській діяльності наукової спільноти.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a3.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>В ХНУРЕ ЗАТВЕРДЖЕНА НОВА ЕКОЛОГІЧНА ПОЛІТИКА</h2>
+                    <p>26 грудня наказом ректора введено в дію рішення Вченої ради університету щодо затвердження Екологічної політики ХНУРЕ.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a4.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>ВИПУСКНИК ХНУРЕ УСПІШНО ЗАХИСТИВ ДИСЕРТАЦІЮ В УНІВЕРСИТЕТІ М. ЛІМОЖ, ФРАНЦІЯ</h2>
+                    <p>Вітаємо Шпаковича Максима, з успішним
+                        захистом дисертаційної роботи в Університеті м. Лімож, Франція.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a5.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>ПІДПИСАНО МЕМОРАНДУМ ПРО СПІВРОБІТНИЦТВО З ХАРКІВСЬКИМ ОБЛАСНИМ ЦЕНТРОМ ЗАЙНЯТОСТІ</h2>
+                    <p>21 грудня в стінах Харківського національного університету радіоелектроніки було підписано
+                        Меморандум про співробітництво між Харківським обласним центром зайнятості та ХНУРЕ.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a6.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>СТУДЕНТ ХНУРЕ ВЗЯВ УЧАСТЬ У ЧЕМПІОНАТІ УКРАЇНИ</h2>
+                    <p>Студент Харківського національного університету радіоелектроніки Ігор Дишук взяв участь у Чемпіонаті
+                        України зі спортивної гімнастики.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a7.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>СТУДЕНТКА ХНУРЕ ВИБОРОЛА СРІБНУ МЕДАЛЬ ЧЕМПІОНАТУ УКРАЇНИ З ТХЕКВОНДО</h2>
+                    <p>Студентка Харківського національного університету радіоелектроніки Єлизавета Христенко взяла участь
+                        у змагання чемпіонату України з тхеквондо ВТФ. За результатами змагань спортсменка виборола дві срібні
+                        медалі в різних вікових групах – серед дорослих та молоді.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a8.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>ПРОРЕКТОР З МІЖНАРОДНОГО СПІВРОБІТНИЦТВА ХНУРЕ ВІДВІДАВ АЗЕРБАЙДЖАНСЬКУ РЕСПУБЛІКУ</h2>
+                    <p>Мурад Омаров, проректор з міжнародного співробітництва Харківського національного університету радіоелектроніки,
+                        з робочим візитом, відвідав Азербайджанську Республіку, м. Баку.</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="a9.jpg" alt="Зображення 2">
+            <div class="image-overlay">
+                <div class="image-overlay-content">
+                    <h2>СТУДЕНТКА ХНУРЕ СТАЛА ЧЕМПІОНКОЮ УКРАЇНИ З КАРАТЕ</h2>
+                    <p>Студентка Харківського національного університету радіоелектроніки Юлія Гладських, у складі збірної
+                        команди Харківської області, взяла участь у замаганнях чемпіонату України з годзю-рю карате.</p>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>На офіційному сайті уніерситета</h3>
+                <p>Посилання на більшу кількість картинок: https://nure.ua/media-galereja</p>
+            </div>
+        </div>
+
+        <div class="caption">
+            <button class="open-modal">Далі більше ...</button>
+        </div>
+</body>
+</html>
